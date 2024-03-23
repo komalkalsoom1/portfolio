@@ -25,15 +25,15 @@
     --secondary-color:#0e1525;
     --bg-dark-blue:#091020;
     --bg-white:#fff;
-    --grey-color:#c6c9d8bf;
+    --gray-color:#c6c9d8bf;
     --gradient-color:linear-gradient(-224deg,var(--primary-color) 0, #337DFF 100%);
-    --gradient-text:linear-grafient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
+    --gradient-text:linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
     filter: progid:DXImageTransform.Microsoft.gradient(stratColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
 
     /* Text Color */
     --primary-font:'Poppins', sans-serif;
     --primary-text: #FD4766;
-    --text-grey:#c6c9d8bf;
+    --text-gray:#c6c9d8bf;
     --text-white:#fff;
 
 }
@@ -74,8 +74,8 @@ section{
    transition: all .4s ease-in-out;
    padding: 10px 27px;
    background-color: transparent;
-   border: 2px solid var(--grey-color);
-   color: var(--text-grey);
+   border: 2px solid var(--gray-color);
+   color: var(--text-gray);
    font-weight: 500;
    font-size: 14px;
    text-transform: uppercase; 
@@ -114,12 +114,12 @@ h6{
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: var(--text-grey);
+    color: var(--text-gray);
     display: block;
     margin-bottom: 20px;
 }
 p{
-    color: var(--text-grey);
+    color: var(--text-gray);
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 1px;
@@ -159,7 +159,7 @@ button{
 }
 .header-wrapper .navbar-toggler{
     border: 0;
-    color: var(--grey-color);
+    color: var(--gray-color);
     line-height: 2;
 }
 .header-wrapper .navbar-toggler:focus{
@@ -173,7 +173,7 @@ button{
 position: relative;
 font-size: 16px;
 font-weight: 500;
-color: var(--text-grey);
+color: var(--text-gray);
 display: inline-block;
 }
 .header-wrapper .nav-item .nav-link::after{
@@ -223,3 +223,57 @@ color: var(--primary-text);
 }
 /* 4)==== About */
 
+.about_wrapper ul.nav-pills{
+border: 1px solid var(--gray-color);
+border-radius: 50px;
+}
+.about_wrapper ul li .nav-link{
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.45s cubic-bezier(0,0,0.2,1);
+    display: inline-block;
+    color: var(--text-gray);
+    border: 0;
+}
+.about_wrapper ul li .nav-link.active{
+    background-color: var(--primary-color);
+}
+.about_wrapper .single-progress{
+margin-top: 26px;
+position: relative;
+overflow: hidden;
+}
+.about_wrapper .single-progress .progress{
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: var(--bg-white);
+    overflow: visible;
+}
+.about_wrapper .single-progress .progress-bar{
+    background-image: var(--gradient-color);
+}
+.about_wrapper .single-progress h6{
+    color: var(--text-gray);
+    text-align: left;
+}
+.about_wrapper .single-progress .label{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+.about_wrapper .tab-pane li{
+    color: var(--gray-color);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    list-style: none;
+}
+.about_wrapper .tab-pane li a{
+    font-weight: 500;
+    display: block;
+    color: var(--text-gray);
+}

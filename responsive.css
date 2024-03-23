@@ -32,6 +32,11 @@
     .banner-wrapper {
         padding: 200px 0;
     }
+    /* about */
+    .about_wrapper ul.nav-pills{
+        width: 61%;
+        margin: auto;
+    }
 }
 
 @media (max-width:767px) {
@@ -50,5 +55,14 @@
         font-size: 13px;
         line-height: 24px;
 
+    }
+     /* about */
+     .about_wrapper ul.nav-pills{
+        width: 100%;
+        margin: auto;
+        border: 0;
+    }
+    .about_wrapper ul li .nav-link{
+        font-size: 13px;
     }
 }
